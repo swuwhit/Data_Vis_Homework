@@ -9,6 +9,7 @@ my.age<-55
 my.name<-"Salina"
 
 #Define function returning character string
+MakeIntroduction<-function(my.name, my.age)
 MakeIntroduction<-(paste("Hello, my name is", my.name, "and I'm", my.age, "years old."))
 
 #create variable my.intro
@@ -48,7 +49,7 @@ print(without.four)
 #Titles with more than 15 characters
 charactercount<-str_length(favorite.books)
 print(charactercount)
-long.titles<-subset(favorite.books, charactercount < 15)
+long.titles<-subset(favorite.books, charactercount > 15)
 print(long.titles)
 
 #Part 3
