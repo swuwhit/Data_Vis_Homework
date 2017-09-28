@@ -9,7 +9,6 @@ my.age<-55
 my.name<-"Salina"
 
 #Define function returning character string
-MakeIntroduction<-function(my.name, my.age)
 MakeIntroduction<-(paste("Hello, my name is", my.name, "and I'm", my.age, "years old."))
 
 #create variable my.intro
@@ -26,7 +25,7 @@ capital.intro<-str_to_title(my.intro)
 print(capital.intro)
 
 #Store and Count the e letters
-e.count<-str_count(my.intro, "e")
+e.count<-str_count(my.intro, pattern="e")
 print(e.count)
 
 #Part Two
@@ -73,5 +72,7 @@ print(square.root)
 round.numbers<-round(square.root)
 print(round.numbers)
 
+#variabe that contains only values which are squares
 squares<-which(square.root==round.numbers, arr.ind = TRUE)
 print(squares)
+
